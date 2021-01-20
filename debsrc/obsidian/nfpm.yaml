@@ -1,0 +1,18 @@
+name: "obsidian"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Notes and knowledge manager
+vendor: "Obsidian team"
+homepage: "https://obsidian.md"
+license: "Proprietary"
+files:
+  # chmod 755
+  assets/Obsidian.AppImage: "/usr/local/bin/Obsidian.AppImage"
+  # chmod 644
+  obsidian.png: "/usr/share/icons/obsidian.png"
+  obsidian.desktop: "/usr/share/applications/obsidian.desktop"

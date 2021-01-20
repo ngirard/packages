@@ -1,0 +1,20 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+depends:
+- fzf (>= 0.24.4) # https://github.com/denisidoro/navi/issues/447
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Interactive cheatsheet tool for the command-line
+vendor: "Denis Isidoro <denis_isidoro@live.com>"
+homepage: "https://github.com/denisidoro/navi"
+license: "Apache-2.0"
+files:
+  # chmod 755
+  assets/navi: "/usr/local/bin/navi"
+  # chmod 644
+  # https://github.com/denisidoro/navi/raw/master/README.md
+  assets/README.md: "/usr/local/share/navi/README.md"

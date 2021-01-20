@@ -1,0 +1,34 @@
+export name := "obsidian"
+export version := "0.10.6"
+set shell := ["bash", "-c"]
+
+debdir := "../../deb"
+debfile := debdir+"/"+name+"-"+version+"_amd64.deb"
+ar := "Obsidian-"+version+".AppImage"
+url := "https://github.com/obsidianmd/obsidian-releases/releases/download/v"+version+"/"+ar
+
+get_release_assets:
+  [ ! -f "{{ar}}" ] && wget {{url}} || true
+  [ ! -d "assets" ] && mkdir "assets" || true
+  rm assets/* || true
+  #unzip -j -d assets "{{ar}}"
+  chmod 755 "{{ar}}"
+  mv "{{ar}}" assets/Obsidian.AppImage
+
+clean:
+  rm -rf "{{ar}}" assets
+
+deb:
+  nfpm pkg -f <(envsubst '${name} ${version}' < nfpm.yaml) -t "{{debfile}}"
+
+release: get_release_assets deb clean
+
+install:
+  #!/usr/bin/env bash
+  [[ ! -f "{{debfile}}" ]] && just install
+  sudo dpkg -i {{debfile}}
+
+update_salt:
+  #!/usr/bin/env bash
+  f="/srv/salt/document_editing/init.sls"
+  sd 'bsidian-\d{1,2}\.\d{1,2}\.\d{1,2}' "bsidian-{{version}}" "$f"

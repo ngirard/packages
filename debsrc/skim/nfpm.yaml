@@ -1,0 +1,17 @@
+name: "skim"
+arch: "amd64"
+platform: "linux"
+version: "0.9.3"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Fuzzy finder written in Rust, mostly compatible with Fzf.
+vendor: "Jinzhou Zhang"
+homepage: "https://github.com/lotabout/skim/"
+license: "MIT"
+files:
+  # chmod 755
+  sk: "/usr/local/bin/sk"
+  # chmod 644
+  README.md: "/usr/local/share/skim/README.md"

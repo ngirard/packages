@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Obsidian
+Comment=Gestionnaire de notes et de connaissances
+#Path=$HOME/Vidéos
+Exec=/usr/local/bin/Obsidian.AppImage %u
+Icon=/usr/share/icons/obsidian.png
+Categories=Office;Education;Literature
+MimeType=text/markdown;x-scheme-handler/obsidian;
+

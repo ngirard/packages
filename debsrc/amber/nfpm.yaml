@@ -1,0 +1,20 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  A code search / replace tool.
+vendor: "Dalance"
+homepage: "https://github.com/dalance/amber"
+license: "MIT"
+files:
+  # chmod 755
+  assets/ambr: "/usr/local/bin/ambr"
+  assets/ambs: "/usr/local/bin/ambs"
+  # chmod 644
+  #assets/LICENSE: /usr/local/share/doc/amber/LICENSE
+  #assets/README.md: /usr/local/share/doc/amber/README.md
+  #assets/CHANGELOG.md: /usr/local/share/doc/amber/CHANGELOG.md

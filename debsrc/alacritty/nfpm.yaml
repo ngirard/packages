@@ -1,0 +1,23 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  A cross-platform, GPU-accelerated terminal emulator.
+vendor: "Alacritty team"
+homepage: "https://github.com/alacritty/alacritty"
+license: "Apache"
+files:
+  # chmod 755
+  #/home/ngirard/sandboxes/rust/target/release/alacritty: /usr/local/bin/alacritty
+
+  # chmod 644
+  #/home/ngirard/sandboxes/rust/alacritty/alacritty.yml: /usr/local/share/alacritty/alacritty.yml
+  #/home/ngirard/sandboxes/rust/alacritty/extra/alacritty.man: /usr/local/man/man1/alacritty.1
+  #/home/ngirard/sandboxes/rust/alacritty/extra/linux/Alacritty.desktop: /usr/local/share/applications/Alacritty.desktop
+
+  assets/alacritty-theme/themes/*: /usr/local/share/alacritty/themes
+  #assets/alacritty.png: /usr/share/icons/alacritty.png
