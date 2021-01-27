@@ -1,0 +1,22 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  The simple and open source user story mapping tool.
+vendor: "Jens Wollert Ehlers"
+homepage: "https://github.com/amborle/featmap"
+license: "Business source license"
+files:
+  # chmod 755
+  assets/featmap: "/usr/local/bin/featmap"
+  # chmod 644
+  assets/.env: "/usr/local/share/doc/featmap/.env"
+  assets/conf.json: "/usr/local/share/doc/featmap/conf.json"
+  
+  #assets/LICENSE: /usr/local/share/doc/featmap/LICENSE
+  #assets/README.md: /usr/local/share/doc/featmap/README.md
+  #assets/CHANGELOG.md: /usr/local/share/doc/featmap/CHANGELOG.md
