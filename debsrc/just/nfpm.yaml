@@ -1,0 +1,20 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Handy way to save and run project-specific commands
+vendor: "Casey Rodarmor <casey@rodarmor.com>"
+homepage: "https://github.com/casey/just"
+license: "CC0-1.0"
+files:
+  # chmod 755
+  assets/just: "/usr/local/bin/just"
+  # chmod 644
+  assets/just.1: "/usr/local/man/man1/just.1"
+  assets/LICENSE: "/usr/local/share/just/LICENSE"
+  assets/GRAMMAR.md: "/usr/local/share/just/GRAMMAR.md"
+  assets/README.adoc: "/usr/local/share/just/README.adoc"
