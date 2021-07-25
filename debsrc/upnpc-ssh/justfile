@@ -1,0 +1,20 @@
+export name := "upnpc-ssh"
+export version := "0.1.0"
+set shell := ["bash", "-c"]
+
+debdir := "../../deb"
+debfile := debdir+"/"+name+"-"+version+"_amd64.deb"
+ar := "amber-v"+version+"-x86_64-lnx.zip"
+
+clean:
+  rm -rf "{{ar}}" assets
+
+deb:
+  nfpm pkg -f <(envsubst '${name} ${version}' < nfpm.yaml) -t "{{debfile}}"
+
+release: deb clean
+
+install:
+  #!/usr/bin/env bash
+  [[ ! -f "{{debfile}}" ]] && just install
+  sudo dpkg -i {{debfile}}

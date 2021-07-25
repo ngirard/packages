@@ -1,0 +1,24 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Expose ssh server behind NAT.
+vendor: "Nicolas Girard"
+homepage: "https://github.com/ngirard"
+license: "GPL"
+depends:
+  - openssh-server
+  - miniupnpc
+files:
+  # chmod 755
+  upnpc-ssh: /usr/local/bin/upnpc-ssh
+
+overrides:
+  deb:
+    scripts:
+      postinstall: ./scripts/postinstall.sh
+#      preremove: ./scripts/preremove.sh

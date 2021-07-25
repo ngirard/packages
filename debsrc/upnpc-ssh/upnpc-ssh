@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+add=$(hostname -I|cut -d\  -f1)
+upnpc -a ${add} 22 9876 TCP
