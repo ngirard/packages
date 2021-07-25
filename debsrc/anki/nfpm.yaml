@@ -1,0 +1,32 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Spaced-repetition program.
+vendor: "Damien Elmes"
+homepage: "https://github.com/dalance/anki"
+license: "Affero GPL"
+depends:
+  - libxcb-xinerama0
+  - mpv
+files:
+  # chmod 755
+  #assets/anki: "/usr/local/bin/anki"
+  # chmod 644
+  assets/*: /usr/local/share/anki/
+  #assets/README.md: /usr/local/share/doc/anki/README.md
+  #assets/CHANGELOG.md: /usr/local/share/doc/anki/CHANGELOG.md
+
+overrides:
+#  rpm:
+#    scripts:
+#      preinstall: ./scripts/preinstall.sh
+#      postremove: ./scripts/postremove.sh
+  deb:
+    scripts:
+      postinstall: ./scripts/postinstall.sh
+#      preremove: ./scripts/preremove.sh
