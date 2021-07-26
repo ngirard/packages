@@ -1,5 +1,5 @@
 export name := "pandoc-sidenote"
-export version := "0.22.1"
+export version := "0.22.2"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
