@@ -22,7 +22,21 @@ This is intended for personal use, and meant to be temporary replacements for up
 | [Fzf](https://github.com/dalance/fzf) | A command-line fuzzy finder. |
 | [Just](https://github.com/casey/just) | Just a command runner. Written in Rust. |
 | [Miller](https://github.com/johnkerl/miller) | Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON. |
-| []() | . |
+| [Navi](https://github.com/denisidoro/navi) | Interactive cheatsheet tool for the command-line. |
+| [Obsidian](https://obsidian.md) | A second brain, for you, forever. |
+| [Pandoc-sidenote](https://github.com/jez/pandoc-sidenote) | Convert Pandoc Markdown-style footnotes into sidenotes |
+| [Procs](https://github.com/dalance/procs) | A modern replacement for ps written in Rust. |
+| [Skim](https://github.com/lotabout/skim) | Fuzzy finder written in Rust, mostly compatible with Fzf. |
+| [Slap](https://github.com/agnipau/slap) | Painless shell argument parsing and dependency check. |
+| [Soupault](https://www.soupault.app) | Static website generator based on HTML rewriting. |
+| [Supertag](https://github.com/amoffat/supertag) | Tag-based filesystem. Written in Rust. |
+| [Xh](https://github.com/ducaale/xh) | Friendly and fast tool for sending HTTP requests. Written in Rust. |
+
+**Personal programs**
+
+|  |  |
+|--|--|
+| Upnpc-ssh | Expose ssh server behind NAT. |
 
 ## Other programs in my toolbox that are already packaged as deb
 
@@ -30,8 +44,3 @@ This is intended for personal use, and meant to be temporary replacements for up
 |--|--|--|
 | [Fd](https://github.com/sharkdp/fd) | A simple, fast and user-friendly alternative to 'find', written in Rust. | [v8.2.1](https://github.com/sharkdp/fd/releases/download/v8.2.1/fd_8.2.1_amd64.deb) |
 
-
-## TODO
-
-- [ ] xh: add symlink to `xhs` ([rationale](https://github.com/ducaale/xh#shorthand-form-for-urls))
-- [ ] Ferret: the original project has been split (see https://github.com/MontFerret/ferret/issues/266). A bit confusing for me.
