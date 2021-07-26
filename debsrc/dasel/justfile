@@ -1,5 +1,5 @@
 export name := "dasel"
-export version := "1.6.2"
+export version := "1.15.0"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
