@@ -1,5 +1,5 @@
 export name := "miller"
-export version := "5.10.0"
+export version := "5.10.2"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
