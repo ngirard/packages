@@ -1,0 +1,20 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Friendly and fast tool for sending HTTP requests
+vendor: "Mohamed Dahir"
+homepage: "https://github.com/ducaale/xh"
+license: "MIT"
+files:
+  # chmod 755
+  assets/xh: "/usr/local/bin/xh"
+  # chmod 644
+  assets/doc/xh.1: "/usr/local/man/man1/xh.1"
+  assets/doc/CHANGELOG.md: "/usr/local/share/xh/CHANGELOG.md"
+  assets/README.md: "/usr/local/share/xh/README.md"
+  assets/LICENSE: "/usr/local/share/xh/LICENSE"
