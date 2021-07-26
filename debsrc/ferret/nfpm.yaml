@@ -1,0 +1,19 @@
+name: "${name}"
+arch: "amd64"
+platform: "linux"
+version: "${version}"
+section: "default"
+priority: "extra"
+maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
+description: |
+  Declarative web scraping
+vendor: "Tim Voronov"
+homepage: "https://www.montferret.dev"
+license: "Apache"
+files:
+  # chmod 755
+  assets/ferret: "/usr/local/bin/ferret"
+  # chmod 644
+  assets/CHANGELOG.md: "/usr/local/share/ferret/CHANGELOG.md"
+  assets/README.md: "/usr/local/share/ferret/README.md"
+  assets/LICENSE: "/usr/local/share/ferret/LICENSE"
