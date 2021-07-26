@@ -6,8 +6,8 @@ section: "default"
 priority: "extra"
 maintainer: "Nicolas Girard <girard.nicolas@gmail.com>"
 description: |
-  A modern replacement for ps written in Rust.
-vendor: "Dalance"
+  A command-line fuzzy finder.
+vendor: "Junegunn Choi"
 homepage: "https://github.com/dalance/fzf"
 license: "MIT"
 files:
