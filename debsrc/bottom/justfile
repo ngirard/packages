@@ -1,5 +1,5 @@
 export name := "bottom"
-export version := "0.5.6"
+export version := "0.6.3"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
