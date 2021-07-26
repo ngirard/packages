@@ -10,7 +10,7 @@ description: |
 vendor: "Sebastian Thiel <byronimo@gmail.com>"
 homepage: "https://github.com/Byron/dua-cli"
 license: "MIT"
-contents:
+files:
   # chmod 755
   assets/dua: "/usr/local/bin/dua"
   # chmod 644
