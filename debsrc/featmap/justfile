@@ -1,5 +1,5 @@
 export name := "featmap"
-export version := "2.0.1"
+export version := "2.1.0"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
