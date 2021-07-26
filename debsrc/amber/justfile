@@ -1,5 +1,5 @@
 export name := "amber"
-export version := "0.5.8"
+export version := "0.5.9"
 set shell := ["bash", "-c"]
 
 debdir := "../../deb"
